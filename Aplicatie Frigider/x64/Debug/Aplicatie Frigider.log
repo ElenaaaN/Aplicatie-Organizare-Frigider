@@ -1,0 +1,57 @@
+﻿  main.cpp
+  ManagerUtilizatori.cpp
+  Raft.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(309,68): error C2512: 'Utilizator::Utilizator': no appropriate default constructor available
+  (compiling source file 'ManagerUtilizatori.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(309,68):
+  while trying to match the argument list '()'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(309,68):
+  the template instantiation context (the oldest one first) is
+  	C:\Joc Frigider\Aplicatie Frigider\Aplicatie Frigider\ManagerUtilizatori.h(9,39):
+  	see reference to class template instantiation 'std::unordered_map<std::string,Utilizator,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,Utilizator>>>' being compiled
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(436,18):
+  	while compiling class template member function 'Utilizator &std::unordered_map<std::string,Utilizator,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,Utilizator>>>::operator [](const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'
+  		C:\Joc Frigider\Aplicatie Frigider\Aplicatie Frigider\ManagerUtilizatori.cpp(15,41):
+  		see the first reference to 'std::unordered_map<std::string,Utilizator,std::hash<std::string>,std::equal_to<std::string>,std::allocator<std::pair<const std::string,Utilizator>>>::operator []' in 'ManagerUtilizatori::incarcaUtilizatoriDinFisier'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\unordered_map(437,20):
+  	see reference to function template instantiation 'std::pair<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::_Hash<std::_Umap_traits<_Kty,Utilizator,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Try_emplace<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>&,>(_Keyty)' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,Utilizator>,
+              _Alloc=std::allocator<std::pair<const std::string,Utilizator>>,
+              _Kty=std::string,
+              _Hasher=std::hash<std::string>,
+              _Keyeq=std::equal_to<std::string>,
+              _Keyty=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xhash(699,49):
+  	see reference to function template instantiation 'std::_List_node_emplace_op2<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_List_node_emplace_op2<const std::piecewise_construct_t&,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>>(_Alnode &,const std::piecewise_construct_t &,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &> &&,std::tuple<> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,Utilizator>,
+              _Alloc=std::allocator<std::pair<const std::string,Utilizator>>,
+              _Alnode=std::allocator<std::_List_node<std::pair<const std::string,Utilizator>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,Utilizator>>>::void_pointer>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\list(585,25):
+  	see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &> &&,std::tuple<> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::_List_node<std::pair<const std::string,Utilizator>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,Utilizator>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,Utilizator>,
+              _Objty=std::pair<const std::string,Utilizator>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xmemory(727,82):
+  	see reference to function template instantiation 'std::pair<const std::string,Utilizator>::pair<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>&,>(std::piecewise_construct_t,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>)' being compiled
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(313,15):
+  	see reference to function template instantiation 'std::pair<const std::string,Utilizator>::pair<std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<size_t,0>,std::integer_sequence<size_t>)' being compiled
+          with
+          [
+              _Tuple1=std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,
+              _Tuple2=std::tuple<>
+          ]
+  
+C:\Joc Frigider\Aplicatie Frigider\Aplicatie Frigider\Raft.h(6,10): error C1083: Cannot open include file: 'Aliment.h': No such file or directory
+  (compiling source file 'Raft.cpp')
+  
+  Utilizator.cpp
+  Generating Code...
